@@ -108,7 +108,7 @@ def super_simple():
     return jsonify(message='Hello from the Planetary API.'), 200
 
 
-@app.route('/not_found')
+@app.route('/*')
 def not_found():
     return jsonify(message='That resource was not found'), 404
 
